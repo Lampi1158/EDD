@@ -49,5 +49,11 @@ namespace EDDemo.Estructuras_No_Lineales
             txtArbol.Text  = "";
             txtDato.Text = "";
         }
+
+        private void txtDato_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
