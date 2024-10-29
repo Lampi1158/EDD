@@ -100,7 +100,7 @@ namespace EDDemo.Estructuras_No_Lineales
 
         private void btnGraficar_Click(object sender, EventArgs e)
         {
-        /*    tring graphVizString;
+            string graphVizString;
 
             miRaiz = miArbol.RegresaRaiz();
             if (miRaiz == null)
@@ -113,18 +113,18 @@ namespace EDDemo.Estructuras_No_Lineales
             b.Append("digraph G { node [shape=\"circle\"]; " + Environment.NewLine);
             b.Append(miArbol.ToDot(miRaiz));
             b.Append("}");
-            //graphVizString = b.ToString();
+            graphVizString = b.ToString();
 
-            //graphVizString = @" digraph g{ label=""Graph""; labelloc=top;labeljust=left;}";
-            //graphVizString = @"digraph Arbol{Raiz->60; 60->40. 60->90; 40->34; 40->50;}";
+            graphVizString = @" digraph g{ label=""Graph""; labelloc=top;labeljust=left;}";
+            graphVizString = @"digraph Arbol{Raiz->60; 60->40. 60->90; 40->34; 40->50;}";
             Bitmap bm = FileDotEngine.Run(graphVizString);
 
 
-          //  frmGrafica graf = new frmGrafica();
-            //graf.ActualizaGrafica(bm);
-            //graf.MdiParent = this.MdiParent;
-            //graf.Show();
-*/        }
+            Grafica graf = new Grafica();
+            graf.ActualizaGrafica(bm);
+            graf.MdiParent = this.MdiParent;
+            graf.Show();
+      }
 
         private void btnRecorrer_Click(object sender, EventArgs e)
         {
