@@ -39,6 +39,7 @@
             this.picGrafica.Size = new System.Drawing.Size(799, 447);
             this.picGrafica.TabIndex = 0;
             this.picGrafica.TabStop = false;
+            this.picGrafica.Click += new System.EventHandler(this.picGrafica_Click);
             // 
             // Grafica
             // 

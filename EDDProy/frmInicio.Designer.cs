@@ -30,13 +30,13 @@ namespace EDDemo
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.algoritmosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasNoLibealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.algoritmosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +55,13 @@ namespace EDDemo
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // algoritmosToolStripMenuItem
+            // 
+            this.algoritmosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.algoritmosToolStripMenuItem.Name = "algoritmosToolStripMenuItem";
+            this.algoritmosToolStripMenuItem.Size = new System.Drawing.Size(137, 32);
+            this.algoritmosToolStripMenuItem.Text = "Algoritmos ";
+            // 
             // estructurasLinealesToolStripMenuItem
             // 
             this.estructurasLinealesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -70,20 +77,20 @@ namespace EDDemo
             // pilasToolStripMenuItem
             // 
             this.pilasToolStripMenuItem.Name = "pilasToolStripMenuItem";
-            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(151, 32);
             this.pilasToolStripMenuItem.Text = "Pilas";
             this.pilasToolStripMenuItem.Click += new System.EventHandler(this.pilasToolStripMenuItem_Click);
             // 
             // colasToolStripMenuItem
             // 
             this.colasToolStripMenuItem.Name = "colasToolStripMenuItem";
-            this.colasToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.colasToolStripMenuItem.Size = new System.Drawing.Size(151, 32);
             this.colasToolStripMenuItem.Text = "Colas";
             // 
             // listasToolStripMenuItem
             // 
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
-            this.listasToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(151, 32);
             this.listasToolStripMenuItem.Text = "Listas";
             // 
             // estructurasNoLibealesToolStripMenuItem
@@ -98,23 +105,17 @@ namespace EDDemo
             // arbolesToolStripMenuItem
             // 
             this.arbolesToolStripMenuItem.Name = "arbolesToolStripMenuItem";
-            this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(170, 32);
             this.arbolesToolStripMenuItem.Text = "Arboles";
             this.arbolesToolStripMenuItem.Click += new System.EventHandler(this.arbolesToolStripMenuItem_Click);
-            // 
-            // algoritmosToolStripMenuItem
-            // 
-            this.algoritmosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.algoritmosToolStripMenuItem.Name = "algoritmosToolStripMenuItem";
-            this.algoritmosToolStripMenuItem.Size = new System.Drawing.Size(137, 32);
-            this.algoritmosToolStripMenuItem.Text = "Algoritmos ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(235, 78);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(202, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(783, 46);
             this.label1.TabIndex = 5;

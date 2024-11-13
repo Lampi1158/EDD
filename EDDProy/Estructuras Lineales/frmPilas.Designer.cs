@@ -38,7 +38,7 @@ namespace EDDemo
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(335, 62);
+            this.textBox1.Location = new System.Drawing.Point(465, 82);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -49,7 +49,7 @@ namespace EDDemo
             // 
             this.btnPush1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnPush1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPush1.Location = new System.Drawing.Point(380, 127);
+            this.btnPush1.Location = new System.Drawing.Point(517, 139);
             this.btnPush1.Margin = new System.Windows.Forms.Padding(2);
             this.btnPush1.Name = "btnPush1";
             this.btnPush1.Size = new System.Drawing.Size(114, 45);
@@ -62,7 +62,7 @@ namespace EDDemo
             // 
             this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(380, 189);
+            this.button1.Location = new System.Drawing.Point(517, 201);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 43);
@@ -84,7 +84,7 @@ namespace EDDemo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(376, 27);
+            this.label1.Location = new System.Drawing.Point(502, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 22);
             this.label1.TabIndex = 4;
@@ -95,7 +95,7 @@ namespace EDDemo
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(651, 456);
+            this.ClientSize = new System.Drawing.Size(938, 516);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);

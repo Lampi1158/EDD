@@ -31,5 +31,10 @@ namespace EDDemo
         {
 
         }
+
+        private void picGrafica_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

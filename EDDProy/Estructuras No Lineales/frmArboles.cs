@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -214,8 +215,177 @@ namespace EDDemo.Estructuras_No_Lineales
 
         }
 
+        private void txtNodos_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+   
 
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            miArbol.PodarTodoElArbol();
+            MessageBox.Show("El árbol ha sido podado completamente.");
 
+            txtArbol.Text = "";
+            lblRecorridoPreOrden.Text = "";
+            lblRecorridoInOrden.Text = "";
+            lblRecorridoPostOrden.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int valor;
+            if (int.TryParse(txtDato.Text, out valor))
+            {
+                miRaiz = miArbol.RegresaRaiz();
+
+                
+                if (miRaiz == null)
+                {
+                    MessageBox.Show("El árbol está vacío.");
+                    return;
+                }
+
+              
+                miArbol.eliminarPredecesor(valor, ref miRaiz);
+
+                
+                miArbol.strArbol = "";
+                miArbol.Muestra(1, miRaiz);
+                txtArbol.Text = miArbol.strArbol;
+
+                txtDato.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Por favor, introduce un número válido.");
+            }
+        }
+
+        private void btnsucesor_Click(object sender, EventArgs e)
+        {
+            int valor;
+            if (int.TryParse(txtDato.Text, out valor))
+            {
+                miRaiz = miArbol.RegresaRaiz();
+
+                
+                if (miRaiz == null)
+                {
+                    MessageBox.Show("El árbol está vacío.");
+                    return;
+                }
+
+                
+                miArbol.eliminarSucesor(valor, ref miRaiz);
+
+                
+                miArbol.strArbol = "";
+                miArbol.Muestra(1, miRaiz);
+                txtArbol.Text = miArbol.strArbol;
+
+                txtDato.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Por favor, introduce un número válido.");
+            }
+        }
+
+        private void btnVaciar_Click(object sender, EventArgs e)
+        {
+            miArbol = new ArbolBusqueda(); 
+            miRaiz = null; 
+            
+            txtArbol.Text = "";
+            lblRecorridoPreOrden.Text = "";
+            lblRecorridoInOrden.Text = "";
+            lblRecorridoPostOrden.Text = "";
+            txtDato.Text = "";
+
+            MessageBox.Show("El árbol ha sido vaciado completamente.");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío.");
+                return;
+            }
+
+            int altura = miArbol.Altura(miRaiz);
+
+            MessageBox.Show($"La altura del árbol es: {altura}");
+        }
+
+        private void btnNiveles_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío.");
+                return;
+            }
+
+            miArbol.strRecorrido = ""; 
+            miArbol.RecorridoPorNiveles(miRaiz);
+
+            label5.Text = "Recorrido por niveles: " + miArbol.strRecorrido;
+        }
+
+        private void btnContador_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío.");
+                return;
+            }
+
+            int cantidadHojas = miArbol.ContarHojas(miRaiz);
+            MessageBox.Show($"El árbol tiene {cantidadHojas} hojas.");
+
+            miRaiz = miArbol.RegresaRaiz();
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío.");
+                return;
+            }
+
+            int cantidadNodos = miArbol.ContarNodos(miRaiz);
+            MessageBox.Show($"El árbol tiene {cantidadNodos} nodos.");
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            if (miArbol.esLleno(miRaiz))
+            {
+                MessageBox.Show("El árbol es lleno.");
+            }
+            else
+            {
+                MessageBox.Show("El árbol NO es lleno.");
+            }
+
+            miRaiz = miArbol.RegresaRaiz();
+            if (miArbol.esCompleto(miRaiz))
+            {
+                MessageBox.Show("El árbol es completo.");
+            }
+            else
+            {
+                MessageBox.Show("El árbol NO es completo.");
+            }
+        }
     }
-}
+    }
+    
+
